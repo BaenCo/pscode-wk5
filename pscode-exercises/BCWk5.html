@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <table>
+      <tr>
+        <td>
+            <h2> Adder</h2>
+      <p>Please input two numbers</p>
+        </td>
+      </tr>
+      <td>      
+      <input type="number" id="N1" onclick="addNum()"  min="0" >
+      <input type="number" id="N2" onclick="addNum()" min="0" >      
+      <button name="Add" type="button" onclick="addNum()">Sum</button>
+     <div id="Output">Sum</div>
+          </td>         
+      <tr>        
+          <td>
+            <h2> Is it Odd or Even?</h2>
+           <p>Insert number here</p>
+    <input type="number" id="Na1" onchange="splitNum()">
+            <button name="Split" type="button" onclick="splitNum()">Split</button>
+              <div id="odEv">???</div>
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Gimme Five!...Numbers</h2>
+          <p>Input any five numbers, seperated by a comma</p>
+          <input type="text" id="arrayNum">
+          <button name="Average" id="av" onclick="doAverage()" onchange="doAverage()">Average</button>
+          <div id="avOut"></div>
+          <div id="avOut2"></div>
+          <div id="avOut3"></div>
+          <button name="expl" type="button" id="explB" onclick="alert('The User input is gathered as a string, seperated on commas, converted to a numerical array, sorted, and divided by the array length. It will actually handle larger amounts automatically.')">Explanation</button>          
+        </td>
+      </tr>        
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
